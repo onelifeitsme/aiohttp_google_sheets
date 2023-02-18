@@ -1,0 +1,14 @@
+{% extends 'dashboard/dashboard_layout.html'  %}
+
+{% block dashboard_content %}
+<h3>Нет подключённых счётчиков Яндекс.Метрика</h3>
+<br>
+<form method="post">
+    <input type="text" name="analytics_id" id="analytics_id" placeholder="Введите номер счётчика">
+    <button type="button" onclick="analytics_connection()">Подключить</button>
+</form>
+{% endblock %}
+
+{% block extrascripts %}
+    <script src="/static/js/analytics_connection.js"></script>
+{% endblock %}

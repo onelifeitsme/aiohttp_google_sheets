@@ -1,0 +1,9 @@
+{% extends '_layout.html'  %}
+
+{% block content %}
+    {% include 'partials/sidebar.html' %}
+    <div class="dashboard_content_block">
+        {% block dashboard_content %}{% endblock %}
+    </div>
+{% endblock %}
+
